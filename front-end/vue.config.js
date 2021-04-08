@@ -6,5 +6,11 @@ module.exports = {
         target: 'http://localhost:8080'
       }
     }
+  },
+  configureWebpack: {
+    entry: {
+      app: './src/main.js',
+      style: ['bootstrap/dist/css/bootstrap.min.css']
+    }
   }
 }

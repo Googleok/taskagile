@@ -1,16 +1,22 @@
-import Vue from "vue";
-import Router from "vue-router";
-import LoginPage from "@/views/LoginPage";
+import Vue from 'vue'
+import Router from 'vue-router'
+import LoginPage from '@/views/LoginPage'
+import RegisterPage from '@/views/RegisterPage'
 
-Vue.use(Router);
+Vue.use(Router)
 export default new Router({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/login",
-      name: "LoginPage",
+      path: '/login',
+      name: 'LoginPage',
       component: LoginPage
+    },
+    {
+      path: '/register',
+      name: 'RegisterPage',
+      component: RegisterPage
     }
   ]
-});
+})
